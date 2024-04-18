@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared", "../shared/*"],
+      "models/*": ["./src/models", "./src/models/*"],
+      "services/*": ["./src/services", "./src/services/*"],
+      "utils/*": ["./src/utils", "./src/utils/*"],
+      "controllers/*": ["./src/controllers", "./src/controllers/*"],
+
+    }
+  },
+  "lib": ["es2015"], 
+  "include": ["./src/", "../shared/"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+}
